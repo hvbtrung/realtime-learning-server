@@ -73,12 +73,41 @@ exports.login = async (req, res, next) => {
     })
 }
 
-exports.logout = (req, res) => {
+exports.socialLoginSuccess = (req, res) => {
+    if (req.user) {
+        const accessToken = signAccessToken(req.user._id || req.user.id);
+
+        const cookieOptions = createCookieOptions();
+
+        res.cookie('jwt', accessToken, cookieOptions);
+
+        res.status(201).json({
+            status: 'success',
+            accessToken,
+            data: { user: req.user }
+        })
+    }
+}
+
+exports.socialLoginFailed = (req, res) => {
+    res.status(401).json({
+        status: 'error'
+    })
+}
+
+exports.logout = (req, res, next) => {
     res.cookie('jwt', '', {
         httpOnly: true,
         secure: false,
         expires: new Date(Date.now() + 1 * 1000)
     });
+
+    if (req.user) {
+        req.logout((err) => {
+            if (err) next(err);
+        })
+    }
+
     res.status(200).json({ status: 'success' });
 }
 

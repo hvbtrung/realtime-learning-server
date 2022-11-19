@@ -12,6 +12,7 @@ const userSchema = new mongoose.Schema({
     },
     password: {
         type: String,
+        default: null
         // select: false,
         // required: [true, 'Please provide a password'],
         // minLength: [6, 'Password must be up to 6 characters']
@@ -32,6 +33,14 @@ const userSchema = new mongoose.Schema({
     active: {
         type: Boolean,
         default: false
+    },
+    googleId: {
+        type: String,
+        default: null
+    },
+    githubId: {
+        type: String,
+        default: null
     }
 }, {
     timestamps: true,
