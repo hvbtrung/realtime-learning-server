@@ -1,5 +1,6 @@
 const jwt = require('jsonwebtoken');
 const User = require('../models/userModel');
+const sendEmail = require('../utils/sendEmail');
 
 const signAccessToken = (id) => {
     return jwt.sign({ id }, process.env.ACCESS_TOKEN_SECRET, { expiresIn: process.env.ACCESS_TOKEN_EXPIRES_IN });
@@ -7,6 +8,14 @@ const signAccessToken = (id) => {
 
 const decodeAccessToken = (token) => {
     return jwt.verify(token, process.env.ACCESS_TOKEN_SECRET);
+}
+
+const signConfirmEmailToken = (id) => {
+    return jwt.sign({ id }, process.env.CONFIRM_EMAIL_SECRET, { expiresIn: process.env.CONFIRM_EMAIL_EXPIRES_IN });
+}
+
+const decodeConfirmEmailToken = (token) => {
+    return jwt.verify(token, process.env.CONFIRM_EMAIL_SECRET);
 }
 
 const createCookieOptions = () => {
@@ -30,17 +39,45 @@ exports.register = async (req, res, next) => {
 
     const newUser = await User.create({ email, password, name });
 
-    const accessToken = signAccessToken(newUser._id);
+    // Send confirm account email
+    const confirmEmailToken = signConfirmEmailToken(newUser._id);
 
-    const cookieOptions = createCookieOptions();
+    const confirmUrl = `${process.env.SERVER_URL}/api/users/confirmation/${confirmEmailToken}`;
 
-    res.cookie('jwt', accessToken, cookieOptions);
+    const message = `
+        <h2>Hello ${newUser.name}</h2>
+        <p>Please use the url below to activate your account</p>
+        <p>This confirm link is valid for 7 days.</p>
 
-    res.status(201).json({
-        status: 'success',
-        accessToken,
-        data: { user: newUser }
-    })
+        <a href=${confirmUrl} clicktracking=off>${confirmUrl}</a>
+
+        <p>Regards...</p>
+        <p>Realtime Learning Team</p>
+    `;
+    const subject = 'Confirm Email';
+    const send_to = newUser.email;
+    const send_from = process.env.EMAIL_USER;
+
+    try {
+        await sendEmail(subject, message, send_to, send_from);
+        res.status(200).json({
+            status: 'success',
+            message: 'Confirm Email Sent'
+        });
+    } catch (error) {
+        res.stauts(500);
+        throw new Error('Email not sent, please try again');
+    }
+}
+
+exports.confirmEmail = async (req, res, next) => {
+    const { confirmEmailToken } = req.params;
+
+    const decoded = decodeConfirmEmailToken(confirmEmailToken);
+
+    await User.findByIdAndUpdate(decoded.id, { active: true });
+
+    res.redirect(`${process.env.CLIENT_URL}`);
 }
 
 exports.login = async (req, res, next) => {
@@ -57,6 +94,12 @@ exports.login = async (req, res, next) => {
     if (!user || !(await user.correctPassword(password))) {
         const err = new Error('Incorrect email or password');
         err.statusCode = 401;
+        throw err;
+    }
+
+    if (!user.active) {
+        const err = new Error('Not activated account. Please confirm your email to login');
+        err.statusCode = 400;
         throw err;
     }
 

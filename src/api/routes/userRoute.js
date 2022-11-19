@@ -7,6 +7,7 @@ const router = express.Router();
 
 // Normal login
 router.post('/register', authController.register);
+router.get('/confirmation/:confirmEmailToken', authController.confirmEmail);
 router.post('/login', authController.login);
 router.get('/logout', authController.logout);
 
