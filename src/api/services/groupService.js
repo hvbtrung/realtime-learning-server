@@ -1,6 +1,8 @@
 const Group = require("../models/groupModel");
 const GroupDetail = require("../models/groupDetailModel");
 const groupDetailService = require("./groupDetailService");
+const User = require("../models/userModel");
+
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
@@ -13,7 +15,6 @@ module.exports = {
 
     try {
       newGroup = await newGroup.save();
-      console.log("new group", newGroup._id);
       const newMember = await groupDetailService.save({
         userID: userId,
         groupID: newGroup.id,
@@ -43,39 +44,61 @@ module.exports = {
       return null;
     }
   },
+
+  findGroup: async ({ groupId, type }) => {
+    try {
+      groupId = mongoose.Types.ObjectId(groupId);
+      const results = await GroupDetail.find({ groupId, role: type }).populate(
+        "userId"
+      );
+
+      return results;
+    } catch (err) {
+      console.error(e);
+      return null;
+    }
+  },
+
+  assignRole: async ({ ownerId, groupId, role, email }) => {
+    try {
+      var owner = await GroupDetail.findOne({
+        userId: ownerId,
+        groupId: groupId,
+      });
+
+      if (owner.role !== "ROLE_OWNER") {
+        return { message: "unauthorized" };
+      }
+
+      var user = await User.findOne({
+        email: email,
+      });
+
+      if (!user) {
+        return { message: "Invalid" };
+      }
+      var newRow = GroupDetail({
+        groupId: groupId,
+        userId: user._id,
+        role: role,
+      });
+
+      const isExist = await GroupDetail.findOne({
+        groupId: groupId,
+        userId: user._id,
+      });
+      if (isExist) {
+        return { message: "exist" };
+      }
+
+      const result = await newRow.save();
+      if (result) {
+        return { message: "success" };
+      }
+      return { message: "failure" };
+    } catch (e) {
+      console.error(e);
+      return null;
+    }
+  },
 };
-// pipeline: [
-//     {
-//       $match: {
-//         $expr: {
-//           $eq: ["groupId", "35"],
-//         },
-//       },
-//     },
-//   ],
-// Group.aggregate([
-//     {
-//       $lookup: {
-//         from: "groupdetails",
-//         localField: "_id",
-//         foreignField: "groupId",
-//         as: "member",
-//       },
-//     },
-//   ]);
-// .aggregate([
-//   { $match: { groupId: "35" } },
-//   {
-//     $lookup: {
-//       from: "groups",
-//       localField: "groupId",
-//       foreignField: "_id",
-//       as: "member",
-//     },
-//   },
-// ]);
-// console.log(groups);
-// } catch (e) {
-// console.error(e);
-// }
-// },
