@@ -36,18 +36,51 @@ module.exports = {
   },
 
   detachRole: async (req, res) => {
-    const { userIds, groupId } = req.body.data;
+    const { ownerId, userIds, groupId } = req.body.data;
 
-    const result = await groupDetailService.detachRole({ userIds, groupId });
-    if (!result) {
+    const result = await groupDetailService.detachRole({
+      ownerId,
+      userIds,
+      groupId,
+    });
+    if (result) {
+      if (result.message === "unauthorized") {
+        return res.json({
+          status: "error",
+          message: "You don't have permission for this action!",
+        });
+      }
       return res.json({
-        status: "error",
-        message: "Removing a member is a failure",
+        status: "success",
+        message: "Deleting a member is successful!",
       });
     }
     return res.json({
-      status: "success",
-      message: "Deleting a member is successful",
+      status: "error",
+      message: "Removing a member is a failure",
+    });
+  },
+
+  joinGroup: async (req, res) => {
+    const { userId, groupId } = req.body.data;
+
+    const result = await groupDetailService.joinGroup({ userId, groupId });
+
+    if (result) {
+      if (result.message === "exist") {
+        return res.json({
+          status: "error",
+          message: "You have already participated in group!",
+        });
+      }
+      return res.json({
+        status: "success",
+        message: "Joining a group is successful!",
+      });
+    }
+    return res.json({
+      status: "error",
+      message: "Joining a group is a failure",
     });
   },
 };

@@ -1,5 +1,11 @@
-const { request } = require("express");
 const groupService = require("../services/groupService");
+const jwt = require("jsonwebtoken");
+
+const signAccessToken = (id) => {
+  return jwt.sign({ id }, process.env.ACCESS_TOKEN_SECRET, {
+    expiresIn: process.env.ACCESS_TOKEN_EXPIRES_IN,
+  });
+};
 
 module.exports = {
   createGroup: async (req, res) => {
@@ -56,37 +62,40 @@ module.exports = {
     });
   },
 
-  assignRole: async (req, res) => {
-    const { ownerId, groupId, role, email } = req.body.data;
-    const result = await groupService.assignRole({
-      ownerId,
-      groupId,
-      role,
-      email,
-    });
+  sendLinkGroup: async (req, res) => {
+    var { inviteeEmail, groupId, link } = req.body.data;
+
+    const result = await groupService.sendMail({ inviteeEmail, groupId, link });
 
     if (result) {
-      if (result.message === "exist") {
-        return res.json({
-          status: "error",
-          message: "Member is exist",
-        });
-      } else if (result.message === "unauthorized") {
-        return res.json({
-          status: "error",
-          message: "You don't have permission for this action",
-        });
-      } else if (result.message === "invalid") {
-        return res.json({
-          status: "error",
-          message: "An email has been typed which is invalid",
-        });
-      }
-
       return res.json({
         status: "success",
-        message: "Assign new role success",
+        message: "Send email successful",
       });
     }
+
+    return res.json({
+      status: "error",
+      message: "Email not sent, please try again",
+    });
+  },
+
+  getGroup: async (req, res) => {
+    const { groupId } = req.params;
+
+    const data = await groupService.getGroup({ groupId });
+
+    if (data) {
+      return res.json({
+        status: "success",
+        message: "get group info success",
+        group: data,
+      });
+    }
+
+    return res.json({
+      status: "error",
+      message: "get group info failure",
+    });
   },
 };

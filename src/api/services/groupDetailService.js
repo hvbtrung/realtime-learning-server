@@ -31,7 +31,7 @@ module.exports = {
         groupId: groupId,
       });
 
-      if (owner.role !== "ROLE_OWNER") {
+      if (!owner || owner.role !== "ROLE_OWNER") {
         return { message: "unauthorized" };
       }
 
@@ -68,15 +68,52 @@ module.exports = {
     }
   },
 
-  detachRole: async ({ userIds, groupId }) => {
+  joinGroup: async ({ userId, groupId }) => {
     try {
+      var isExist = await GroupDetail.findOne({
+        userId: userId,
+        groupId: groupId,
+      });
+
+      if (isExist) {
+        return { message: "exist" };
+      }
+
+      var newRow = GroupDetail({
+        groupId: groupId,
+        userId: userId,
+        role: "ROLE_MEMBER",
+      });
+
+      const result = await newRow.save();
+
+      if (result) {
+        return true;
+      }
+      return null;
+    } catch (e) {
+      console.error(e);
+      return null;
+    }
+  },
+  detachRole: async ({ ownerId, userIds, groupId }) => {
+    try {
+      var owner = await GroupDetail.findOne({
+        userId: ownerId,
+        groupId: groupId,
+      });
+
+      if (!owner || owner.role !== "ROLE_OWNER") {
+        return { message: "unauthorized" };
+      }
+
       for (const userId of userIds) {
         await GroupDetail.deleteOne({
           userId,
           groupId,
         });
       }
-      return true;
+      return { message: "success" };
     } catch (e) {
       console.error(e);
       return null;

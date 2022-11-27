@@ -44,7 +44,7 @@ app.use(requestInfo);
 // Routes Middleware
 app.use("/api/users", userRoute);
 app.use("/api/group", groupRoute);
-require("./src/api/services/groupService").findGroupsByUserId({});
+
 // Routes
 app.get("/", (req, res) => {
   res.send("Home Page");
