@@ -36,6 +36,8 @@ router.patch('/updateMyPassword', authController.updateMyPassword);
 router.delete('/deleteMe', userController.deleteMe);
 
 // Manage user for Admin
+router.use(authController.restrictTo('admin'));
+
 router.route('/')
     .get(userController.getUsers)
     .post(userController.createUser);

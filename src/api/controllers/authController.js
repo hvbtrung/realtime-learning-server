@@ -181,6 +181,17 @@ exports.protect = async (req, res, next) => {
     next();
 }
 
+exports.restrictTo = (...roles) => {
+    return (req, res, next) => {
+        if (!roles.includes(req.user.role)) {
+            const err = new Error('Not permission!');
+            err.statusCode = 403;
+            throw err;
+        }
+        next();
+    }
+}
+
 exports.updateMyPassword = async (req, res, next) => {
     const user = await User.findById(req.user._id);
 
