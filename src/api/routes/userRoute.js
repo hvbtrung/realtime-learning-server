@@ -27,8 +27,16 @@ router.get('/github/callback', passport.authenticate('github', {
     failureRedirect: 'api/users/social/login/failed'
 }));
 
-// Manage user for Admin
 router.use(authController.protect);
+
+// Manage user for User
+router.get('/me', userController.getMe, userController.getUser);
+router.patch('/updateMe', userController.updateMe);
+router.patch('/updateMyPassword', authController.updateMyPassword);
+router.delete('/deleteMe', userController.deleteMe);
+
+// Manage user for Admin
+router.use(authController.restrictTo('admin'));
 
 router.route('/')
     .get(userController.getUsers)

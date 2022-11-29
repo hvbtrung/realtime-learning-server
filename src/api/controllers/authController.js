@@ -180,3 +180,45 @@ exports.protect = async (req, res, next) => {
     req.user = currentUser;
     next();
 }
+
+exports.restrictTo = (...roles) => {
+    return (req, res, next) => {
+        if (!roles.includes(req.user.role)) {
+            const err = new Error('Not permission!');
+            err.statusCode = 403;
+            throw err;
+        }
+        next();
+    }
+}
+
+exports.updateMyPassword = async (req, res, next) => {
+    const user = await User.findById(req.user._id);
+
+    if (!(await user.correctPassword(req.body.passwordCurrent))) {
+        const err = new Error('Your current password is wrong');
+        err.statusCode = 401;
+        throw err;
+    }
+
+    if (!req.body.passwordNew) {
+        const err = new Error('Please enter new password');
+        err.statusCode = 401;
+        throw err;
+    }
+
+    user.password = req.body.passwordNew;
+    await user.save();
+
+    const accessToken = signAccessToken(user._id);
+
+    const cookieOptions = createCookieOptions();
+
+    res.cookie('jwt', accessToken, cookieOptions);
+
+    res.status(200).json({
+        status: 'success',
+        accessToken,
+        data: { user }
+    })
+}
