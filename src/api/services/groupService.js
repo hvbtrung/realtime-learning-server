@@ -13,6 +13,7 @@ module.exports = {
 
     try {
       newGroup = await newGroup.save();
+
       const newMember = await groupDetailService.save({
         userID: userId,
         groupID: newGroup.id,
@@ -24,7 +25,11 @@ module.exports = {
       }
       return false;
     } catch (e) {
-      console.error("Create group failure, please try again");
+      console.error("error create group", e);
+
+      if (e._message === "Group validation failed") {
+        return { message: "invalid" };
+      }
       return false;
     }
   },
@@ -36,20 +41,6 @@ module.exports = {
 
       return results;
     } catch (e) {
-      console.error(e);
-      return null;
-    }
-  },
-
-  findGroup: async ({ groupId, type }) => {
-    try {
-      groupId = mongoose.Types.ObjectId(groupId);
-      const results = await GroupDetail.find({ groupId, role: type }).populate(
-        "userId"
-      );
-
-      return results;
-    } catch (err) {
       console.error(e);
       return null;
     }

@@ -9,10 +9,22 @@ const signAccessToken = (id) => {
 
 module.exports = {
   createGroup: async (req, res) => {
-    const { data } = req.body;
-    const result = await groupService.save(data);
+    const { nameGroup, shortDesc } = req.body.data;
+
+    const result = await groupService.save({
+      nameGroup,
+      shortDesc,
+      userId: req.user._id,
+    });
 
     if (result) {
+      if (result.message === "invalid") {
+        return res.json({
+          status: "error",
+          message: "Group's name or short description is too long!",
+        });
+      }
+
       return res.json({
         status: "success",
         message: "Creating a new group successfully",
@@ -26,9 +38,9 @@ module.exports = {
   },
 
   getGroupsByUserId: async (req, res) => {
-    // const { data } = req.params;
-    const { userId } = req.params;
-    const data = await groupService.findGroupsByUserId({ userId: userId });
+    const data = await groupService.findGroupsByUserId({
+      userId: req.user._id,
+    });
 
     if (data) {
       return res.json({
@@ -41,24 +53,6 @@ module.exports = {
     return res.json({
       status: "error",
       message: "get groups failure",
-    });
-  },
-
-  getGroupInfo: async (req, res) => {
-    const { groupId, type } = req.params;
-
-    const data = await groupService.findGroup({ groupId, type });
-    if (data) {
-      return res.json({
-        status: "success",
-        message: "get group info success",
-        members: data,
-      });
-    }
-
-    return res.json({
-      status: "error",
-      message: "get group info failure",
     });
   },
 
@@ -77,25 +71,6 @@ module.exports = {
     return res.json({
       status: "error",
       message: "Email not sent, please try again",
-    });
-  },
-
-  getGroup: async (req, res) => {
-    const { groupId } = req.params;
-
-    const data = await groupService.getGroup({ groupId });
-
-    if (data) {
-      return res.json({
-        status: "success",
-        message: "get group info success",
-        group: data,
-      });
-    }
-
-    return res.json({
-      status: "error",
-      message: "get group info failure",
     });
   },
 };

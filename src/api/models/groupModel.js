@@ -6,7 +6,7 @@ const groupSchema = new Schema(
   {
     // _id: { type: Number },
     name: { type: String, maxLength: 30, require: true },
-    shortDesc: { type: String, maxLength: 30 },
+    shortDesc: { type: String, maxLength: 40 },
     photo: {
       type: String,
       default: "https://gstatic.com/classroom/themes/img_read.jpg",

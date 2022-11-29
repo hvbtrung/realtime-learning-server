@@ -11,6 +11,7 @@ const passportSetup = require("./src/api/utils/passport");
 const requestInfo = require("./src/api/middleware/requestInfo");
 const errorHandler = require("./src/api/middleware/errorMiddleware");
 const userRoute = require("./src/api/routes/userRoute");
+const groupDetailRoute = require("./src/api/routes/groupDetailRoute");
 const groupRoute = require("./src/api/routes/groupRoute");
 
 const app = express();
@@ -43,7 +44,8 @@ app.use(requestInfo);
 
 // Routes Middleware
 app.use("/api/users", userRoute);
-app.use("/api/group", groupRoute);
+app.use("/api/group", groupDetailRoute);
+app.use("/api/groups", groupRoute);
 
 // Routes
 app.get("/", (req, res) => {

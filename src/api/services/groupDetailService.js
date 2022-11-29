@@ -96,7 +96,7 @@ module.exports = {
       return null;
     }
   },
-  detachRole: async ({ ownerId, userIds, groupId }) => {
+  delete: async ({ ownerId, userId, groupId }) => {
     try {
       var owner = await GroupDetail.findOne({
         userId: ownerId,
@@ -107,14 +107,42 @@ module.exports = {
         return { message: "unauthorized" };
       }
 
-      for (const userId of userIds) {
-        await GroupDetail.deleteOne({
-          userId,
-          groupId,
-        });
-      }
+      await GroupDetail.deleteOne({
+        userId,
+        groupId,
+      });
+
       return { message: "success" };
     } catch (e) {
+      console.error(e);
+      return null;
+    }
+  },
+
+  findGroup: async ({ groupId }) => {
+    try {
+      groupId = mongoose.Types.ObjectId(groupId);
+      const results = await GroupDetail.findOne({
+        groupId,
+        role: "ROLE_OWNER",
+      }).populate("groupId");
+
+      return results;
+    } catch (err) {
+      console.error(e);
+      return null;
+    }
+  },
+
+  findGroupByGroupId: async ({ groupId, type }) => {
+    try {
+      groupId = mongoose.Types.ObjectId(groupId);
+      const results = await GroupDetail.find({ groupId, role: type }).populate(
+        "userId"
+      );
+
+      return results;
+    } catch (err) {
       console.error(e);
       return null;
     }

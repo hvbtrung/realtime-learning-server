@@ -2,9 +2,10 @@ const groupDetailService = require("../services/groupDetailService");
 
 module.exports = {
   assignRole: async (req, res) => {
-    const { ownerId, groupId, role, email } = req.body.data;
+    const { groupId, role, email } = req.body.data;
+
     const result = await groupDetailService.assignRole({
-      ownerId,
+      ownerId: req.user._id,
       groupId,
       role,
       email,
@@ -35,12 +36,12 @@ module.exports = {
     }
   },
 
-  detachRole: async (req, res) => {
-    const { ownerId, userIds, groupId } = req.body.data;
+  kickOutMember: async (req, res) => {
+    const { userId, groupId, list } = req.params;
 
-    const result = await groupDetailService.detachRole({
-      ownerId,
-      userIds,
+    const result = await groupDetailService.delete({
+      ownerId: req.user._id,
+      userId,
       groupId,
     });
     if (result) {
@@ -62,9 +63,12 @@ module.exports = {
   },
 
   joinGroup: async (req, res) => {
-    const { userId, groupId } = req.body.data;
+    const { groupId } = req.body.data;
 
-    const result = await groupDetailService.joinGroup({ userId, groupId });
+    const result = await groupDetailService.joinGroup({
+      userId: req.user._id,
+      groupId,
+    });
 
     if (result) {
       if (result.message === "exist") {
@@ -81,6 +85,42 @@ module.exports = {
     return res.json({
       status: "error",
       message: "Joining a group is a failure",
+    });
+  },
+
+  getMembers: async (req, res) => {
+    const { groupId, type } = req.query;
+
+    const data = await groupDetailService.findGroupByGroupId({ groupId, type });
+    if (data) {
+      return res.json({
+        status: "success",
+        message: "get group info success",
+        members: data,
+      });
+    }
+
+    return res.json({
+      status: "error",
+      message: "get group info failure",
+    });
+  },
+  getInfoGroup: async (req, res) => {
+    const { groupId } = req.params;
+
+    const data = await groupDetailService.findGroup({ groupId });
+
+    if (data) {
+      return res.json({
+        status: "success",
+        message: "get group info success",
+        group: data,
+      });
+    }
+
+    return res.json({
+      status: "error",
+      message: "get group info failure",
     });
   },
 };
