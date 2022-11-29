@@ -1,5 +1,4 @@
 const express = require("express");
-const groupController = require("../controllers/groupController");
 const groupDetailController = require("../controllers/groupDetailController");
 const authController = require("../controllers/authController");
 
@@ -12,6 +11,5 @@ router.get("/", groupDetailController.getMembers); // get all of members
 router.post("/", groupDetailController.assignRole);
 router.delete("/:groupId/:userId", groupDetailController.kickOutMember);
 router.post("/join", groupDetailController.joinGroup);
-router.post("/invite", groupController.sendLinkGroup);
 
 module.exports = router;
