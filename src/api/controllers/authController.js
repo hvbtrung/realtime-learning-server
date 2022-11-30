@@ -25,10 +25,11 @@ const decodeConfirmEmailToken = (token) => {
 const createCookieOptions = () => {
   const cookieOptions = {
     httpOnly: true,
-    secure: false, // production: true
+    secure: true, // production: true
+    // secure: false, // production: true
     expires: new Date(
       Date.now() +
-        process.env.ACCESS_TOKEN_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000
+      process.env.ACCESS_TOKEN_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000
     ),
   };
 
@@ -150,7 +151,8 @@ exports.socialLoginFailed = (req, res) => {
 exports.logout = (req, res, next) => {
   res.cookie("jwt", "", {
     httpOnly: true,
-    secure: false,
+    secure: true,
+    // secure: false,
     expires: new Date(Date.now() + 1 * 1000),
   });
 
@@ -164,70 +166,70 @@ exports.logout = (req, res, next) => {
 };
 
 exports.protect = async (req, res, next) => {
-let accessToken;
-    if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
-        accessToken = req.headers.authorization.split(' ')[1];
-    } else if (req.cookies.jwt) {
-        accessToken = req.cookies.jwt;
-    }
+  let accessToken;
+  if (req.headers.authorization && req.headers.authorization.startsWith('Bearer')) {
+    accessToken = req.headers.authorization.split(' ')[1];
+  } else if (req.cookies.jwt) {
+    accessToken = req.cookies.jwt;
+  }
 
-    if (!accessToken) {
-        const err = new Error('Unauthorized, please login');
-        err.statusCode = 403;
-        throw err;
-    }
+  if (!accessToken) {
+    const err = new Error('Unauthorized, please login');
+    err.statusCode = 403;
+    throw err;
+  }
 
-    const decoded = decodeAccessToken(accessToken);
+  const decoded = decodeAccessToken(accessToken);
 
-    const currentUser = await User.findById(decoded.id);
-    if (!currentUser) {
-        const err = new Error('User not found');
-        err.statusCode = 401;
-        throw err;
-    }
+  const currentUser = await User.findById(decoded.id);
+  if (!currentUser) {
+    const err = new Error('User not found');
+    err.statusCode = 401;
+    throw err;
+  }
 
-    req.user = currentUser;
-    next();
+  req.user = currentUser;
+  next();
 }
 
 exports.restrictTo = (...roles) => {
-    return (req, res, next) => {
-        if (!roles.includes(req.user.role)) {
-            const err = new Error('Not permission!');
-            err.statusCode = 403;
-            throw err;
-        }
-        next();
+  return (req, res, next) => {
+    if (!roles.includes(req.user.role)) {
+      const err = new Error('Not permission!');
+      err.statusCode = 403;
+      throw err;
     }
+    next();
+  }
 }
 
 exports.updateMyPassword = async (req, res, next) => {
-    const user = await User.findById(req.user._id);
+  const user = await User.findById(req.user._id);
 
-    if (!(await user.correctPassword(req.body.passwordCurrent))) {
-        const err = new Error('Your current password is wrong');
-        err.statusCode = 401;
-        throw err;
-    }
+  if (!(await user.correctPassword(req.body.passwordCurrent))) {
+    const err = new Error('Your current password is wrong');
+    err.statusCode = 401;
+    throw err;
+  }
 
-    if (!req.body.passwordNew) {
-        const err = new Error('Please enter new password');
-        err.statusCode = 401;
-        throw err;
-    }
+  if (!req.body.passwordNew) {
+    const err = new Error('Please enter new password');
+    err.statusCode = 401;
+    throw err;
+  }
 
-    user.password = req.body.passwordNew;
-    await user.save();
+  user.password = req.body.passwordNew;
+  await user.save();
 
-    const accessToken = signAccessToken(user._id);
+  const accessToken = signAccessToken(user._id);
 
-    const cookieOptions = createCookieOptions();
+  const cookieOptions = createCookieOptions();
 
-    res.cookie('jwt', accessToken, cookieOptions);
+  res.cookie('jwt', accessToken, cookieOptions);
 
-    res.status(200).json({
-        status: 'success',
-        accessToken,
-        data: { user }
-    })
+  res.status(200).json({
+    status: 'success',
+    accessToken,
+    data: { user }
+  })
 }
