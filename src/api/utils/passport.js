@@ -6,7 +6,8 @@ const User = require('../models/userModel');
 passport.use(new GoogleStrategy({
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: 'http://localhost:4000/api/users/google/callback'
+    callbackURL: 'https://realtime-learning-server.onrender.com/api/users/google/callback'
+    // callbackURL: 'http://localhost:4000/api/users/google/callback'
 }, async function (accessToken, refreshToken, profile, done) {
     console.log('GG profile', profile);
     //Check if current user already exists in DB
