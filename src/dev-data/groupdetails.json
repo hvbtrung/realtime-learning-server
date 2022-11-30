@@ -1,0 +1,133 @@
+[{
+  "_id": {
+    "$oid": "6385ba77931657a6f8b18f9b"
+  },
+  "userId": {
+    "$oid": "637d0364cebbd0ce86a65f01"
+  },
+  "groupId": {
+    "$oid": "6385ba77931657a6f8b18f99"
+  },
+  "role": "ROLE_OWNER",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6385ba8c931657a6f8b18fa5"
+  },
+  "userId": {
+    "$oid": "637d0364cebbd0ce86a65f01"
+  },
+  "groupId": {
+    "$oid": "6385ba8c931657a6f8b18fa3"
+  },
+  "role": "ROLE_OWNER",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6385ba9f931657a6f8b18fc3"
+  },
+  "userId": {
+    "$oid": "637d06f7703b19a5c2624e5b"
+  },
+  "groupId": {
+    "$oid": "6385ba77931657a6f8b18f99"
+  },
+  "role": "ROLE_COOWNER",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6385baa5931657a6f8b18fd5"
+  },
+  "userId": {
+    "$oid": "638035bbc0a870fa11b35c0e"
+  },
+  "groupId": {
+    "$oid": "6385ba77931657a6f8b18f99"
+  },
+  "role": "ROLE_MEMBER",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6385bacb931657a6f8b1901b"
+  },
+  "userId": {
+    "$oid": "637d06f7703b19a5c2624e5b"
+  },
+  "groupId": {
+    "$oid": "6385ba8c931657a6f8b18fa3"
+  },
+  "role": "ROLE_MEMBER",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6385badb931657a6f8b1903f"
+  },
+  "userId": {
+    "$oid": "638035bbc0a870fa11b35c0e"
+  },
+  "groupId": {
+    "$oid": "6385ba8c931657a6f8b18fa3"
+  },
+  "role": "ROLE_MEMBER",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6385bb07931657a6f8b1905e"
+  },
+  "userId": {
+    "$oid": "637d06f7703b19a5c2624e5b"
+  },
+  "groupId": {
+    "$oid": "6385bb07931657a6f8b1905c"
+  },
+  "role": "ROLE_OWNER",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63866197f9b35b9baca69909"
+  },
+  "userId": {
+    "$oid": "6385c906ea33328d92ed0869"
+  },
+  "groupId": {
+    "$oid": "63866197f9b35b9baca69907"
+  },
+  "role": "ROLE_OWNER",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6386d7ae73326ff0c6630472"
+  },
+  "userId": {
+    "$oid": "637d0364cebbd0ce86a65f01"
+  },
+  "groupId": {
+    "$oid": "6386d7ae73326ff0c6630470"
+  },
+  "role": "ROLE_OWNER",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6386f12973326ff0c6630538"
+  },
+  "userId": {
+    "$oid": "6386f12073326ff0c6630523"
+  },
+  "groupId": {
+    "$oid": "6385ba77931657a6f8b18f99"
+  },
+  "role": "ROLE_MEMBER",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6386f1a373326ff0c66305cc"
+  },
+  "userId": {
+    "$oid": "6386f12073326ff0c6630523"
+  },
+  "groupId": {
+    "$oid": "6385bb07931657a6f8b1905c"
+  },
+  "role": "ROLE_MEMBER",
+  "__v": 0
+}]
