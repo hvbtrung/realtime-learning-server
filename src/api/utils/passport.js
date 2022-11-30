@@ -6,7 +6,7 @@ const User = require('../models/userModel');
 passport.use(new GoogleStrategy({
     clientID: process.env.GOOGLE_CLIENT_ID,
     clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    callbackURL: 'https://realtime-learning-server.onrender.com/api/users/google/callback'
+    callbackURL: '/api/users/google/callback'
     // callbackURL: 'http://localhost:4000/api/users/google/callback'
 }, async function (accessToken, refreshToken, profile, done) {
     console.log('GG profile', profile);
@@ -31,7 +31,7 @@ passport.use(new GithubStrategy({
     clientID: process.env.GITHUB_CLIENT_ID,
     clientSecret: process.env.GITHUB_CLIENT_SECRET,
     scope: ['user:email'],
-    callbackURL: 'https://realtime-learning-server.onrender.com/api/users/github/callback'
+    callbackURL: '/api/users/github/callback'
 }, async function (accessToken, refreshToken, profile, done) {
     console.log('GH profile', profile);
     //Check if current user already exists in DB
