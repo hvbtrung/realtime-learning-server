@@ -17,7 +17,11 @@ const groupRoute = require("./src/api/routes/groupRoute");
 const app = express();
 
 const corsOptions = {
-  origin: ["http://localhost:3000", "https://accounts.google.com"],
+  origin: [
+    "http://localhost:3000",
+    "https://accounts.google.com",
+    "https://realtime-learning-client.onrender.com"
+  ],
   credentials: true,
 };
 
