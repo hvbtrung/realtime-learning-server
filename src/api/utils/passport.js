@@ -31,7 +31,7 @@ passport.use(new GithubStrategy({
     clientID: process.env.GITHUB_CLIENT_ID,
     clientSecret: process.env.GITHUB_CLIENT_SECRET,
     scope: ['user:email'],
-    callbackURL: 'http://localhost:4000/api/users/github/callback'
+    callbackURL: 'https://realtime-learning-server.onrender.com/api/users/github/callback'
 }, async function (accessToken, refreshToken, profile, done) {
     console.log('GH profile', profile);
     //Check if current user already exists in DB

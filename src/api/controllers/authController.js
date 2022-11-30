@@ -25,8 +25,7 @@ const decodeConfirmEmailToken = (token) => {
 const createCookieOptions = () => {
   const cookieOptions = {
     httpOnly: true,
-    secure: true, // production: true
-    // secure: false, // production: true
+    secure: false, // production: true
     expires: new Date(
       Date.now() +
       process.env.ACCESS_TOKEN_COOKIE_EXPIRES_IN * 24 * 60 * 60 * 1000
@@ -151,8 +150,7 @@ exports.socialLoginFailed = (req, res) => {
 exports.logout = (req, res, next) => {
   res.cookie("jwt", "", {
     httpOnly: true,
-    secure: true,
-    // secure: false,
+    secure: false,
     expires: new Date(Date.now() + 1 * 1000),
   });
 
