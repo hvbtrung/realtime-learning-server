@@ -1,12 +1,16 @@
 const mongoose = require("mongoose");
-const Schema = mongoose.Schema;
-// const AutoIncrement = require("mongoose-sequence")(mongoose);
 
-const groupSchema = new Schema(
+const groupSchema = new mongoose.Schema(
   {
-    // _id: { type: Number },
-    name: { type: String, maxLength: 30, require: true },
-    shortDesc: { type: String, maxLength: 40 },
+    name: {
+      type: String,
+      maxLength: 30,
+      require: true
+    },
+    shortDesc: {
+      type: String,
+      maxLength: 40
+    },
     photo: {
       type: String,
       default: "https://gstatic.com/classroom/themes/img_read.jpg",
@@ -21,6 +25,6 @@ const groupSchema = new Schema(
   }
 );
 
-// groupSchema.plugin(AutoIncrement); // set auto increment for id
+const Group = mongoose.model("Group", groupSchema);
 
-module.exports = mongoose.model("Group", groupSchema);
+module.exports = Group;
