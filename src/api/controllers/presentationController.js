@@ -6,7 +6,6 @@ module.exports = {
       userId: req.user._id,
     });
 
-    console.log("results", results);
     if (results.status == "success") {
       return res.status(200).json({
         status: results.status,
@@ -30,7 +29,6 @@ module.exports = {
   },
 
   updatePresentation: async (req, res) => {
-    console.log("data", req.body.data);
     const { titlePresentation, presentationId } = req.body.data;
 
     const result = await presentationService.update({
@@ -43,8 +41,8 @@ module.exports = {
   },
 
   deletePresentation: async (req, res) => {
-    const { presentationId } = req.params.id;
-
+    const { presentationId } = req.params;
+    console.log("presentat", presentationId);
     const result = await presentationService.delete({
       userId: req.user._id,
       presentationId: presentationId,

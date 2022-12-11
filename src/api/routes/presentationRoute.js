@@ -8,5 +8,5 @@ router.use(authController.protect);
 router.get("/", presentationController.getAll);
 router.post("/", presentationController.createPresentation);
 router.put("/", presentationController.updatePresentation);
-
+router.delete("/:presentationId", presentationController.deletePresentation);
 module.exports = router;

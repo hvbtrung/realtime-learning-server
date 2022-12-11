@@ -54,9 +54,12 @@ module.exports = {
 
   delete: async ({ presentationId, userId }) => {
     try {
-      const filter = { owner: userId, _id: presentationId };
+      const filter = {
+        owner: userId,
+        _id: presentationId,
+      };
 
-      await presentationSchema.findOneAndDelete(filter);
+      const a = await presentationSchema.findOneAndDelete(filter);
 
       return { status: "success", message: "Deleting a presentation success" };
     } catch (e) {
