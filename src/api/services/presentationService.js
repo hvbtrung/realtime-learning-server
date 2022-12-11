@@ -6,7 +6,7 @@ module.exports = {
     try {
       // userId = mongoose.Types.ObjectId(userId);
       const results = await presentationSchema
-        .find({ userId })
+        .find({ owner: userId })
         .populate({ path: "owner", select: "name" });
 
       return { status: "success", presentations: results };
