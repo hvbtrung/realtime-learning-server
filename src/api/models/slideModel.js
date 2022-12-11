@@ -1,29 +1,32 @@
 const mongoose = require("mongoose");
 
-const slideSchema = new mongoose.Schema({
+const slideSchema = new mongoose.Schema(
+  {
     context: {
-        type: String
+      type: String,
     },
     description: {
-        type: String
+      type: String,
     },
     question: {
-        type: String,
+      type: String,
     },
     options: {
-        type: Object
+      type: Object,
     },
     typeId: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "SlideType"
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "SlideType",
     },
     presentationId: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: "Presentation"
-    }
-}, {
-    timestamps: true
-});
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "Presentation",
+    },
+  },
+  {
+    timestamps: true,
+  }
+);
 
 const Slide = mongoose.model("Slide", slideSchema);
 

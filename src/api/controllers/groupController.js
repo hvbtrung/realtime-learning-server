@@ -1,11 +1,12 @@
 const groupService = require("../services/groupService");
 const jwt = require("jsonwebtoken");
 
-const signAccessToken = (id) => {
-  return jwt.sign({ id }, process.env.ACCESS_TOKEN_SECRET, {
-    expiresIn: process.env.ACCESS_TOKEN_EXPIRES_IN,
-  });
-};
+// don't remove this command code. I need it to fix join group in next time.
+// const signAccessToken = (id) => {
+//   return jwt.sign({ id }, process.env.ACCESS_TOKEN_SECRET, {
+//     expiresIn: process.env.ACCESS_TOKEN_EXPIRES_IN,
+//   });
+// };
 
 module.exports = {
   createGroup: async (req, res) => {

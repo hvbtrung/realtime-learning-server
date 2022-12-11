@@ -13,6 +13,7 @@ const errorHandler = require("./src/api/middleware/errorMiddleware");
 const userRoute = require("./src/api/routes/userRoute");
 const groupDetailRoute = require("./src/api/routes/groupDetailRoute");
 const groupRoute = require("./src/api/routes/groupRoute");
+const presentationRoute = require("./src/api/routes/presentationRoute");
 
 const app = express();
 
@@ -20,7 +21,7 @@ const corsOptions = {
   origin: [
     "http://localhost:3000",
     "https://accounts.google.com",
-    `${process.env.CLIENT_URL}`
+    `${process.env.CLIENT_URL}`,
   ],
   credentials: true,
 };
@@ -46,10 +47,17 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "public")));
 app.use(requestInfo);
 
+// require("./src/api/controllers/presentationController").createPresentation();
+// require("./src/api/controllers/presentationController").updatePresentation();
+
+// require("./src/api/controllers/presentationController").deletePresentation();
+// require("./src/api/controllers/presentationController").getAll();
+
 // Routes Middleware
 app.use("/api/users", userRoute);
 app.use("/api/group", groupDetailRoute);
 app.use("/api/groups", groupRoute);
+app.use("/api/presentations", presentationRoute);
 
 // Routes
 app.get("/", (req, res) => {

@@ -1,6 +1,5 @@
 const express = require("express");
 const groupController = require("../controllers/groupController");
-const groupDetailController = require("../controllers/groupDetailController");
 const authController = require("../controllers/authController");
 
 const router = express.Router();
