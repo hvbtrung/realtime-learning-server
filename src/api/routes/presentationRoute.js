@@ -1,7 +1,10 @@
 const express = require("express");
 const presentationController = require("../controllers/presentationController");
 const authController = require("../controllers/authController");
+const slideRoute = require("./slideRoute");
 const router = express.Router();
+
+router.use("/:presentationId/slides", slideRoute);
 
 router.use(authController.protect);
 

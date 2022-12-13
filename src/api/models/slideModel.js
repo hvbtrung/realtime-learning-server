@@ -4,15 +4,19 @@ const slideSchema = new mongoose.Schema(
   {
     context: {
       type: String,
+      default: "context",
     },
     description: {
       type: String,
+      default: "description",
     },
     question: {
       type: String,
+      require: true,
     },
     options: {
-      type: Object,
+      type: [Object],
+      require: true,
     },
     typeId: {
       type: mongoose.Schema.Types.ObjectId,
