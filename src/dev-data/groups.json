@@ -1,6 +1,6 @@
 [{
   "_id": {
-    "$oid": "6385ba77931657a6f8b18f99"
+    "$oid": "63875461b311c9314c5af6d2"
   },
   "name": "KCPM 19_3",
   "shortDesc": "Kiểm chứng phần mềm 19_3 2022 - 2023",
@@ -8,18 +8,18 @@
   "active": true,
   "createdAt": {
     "$date": {
-      "$numberLong": "1669708407275"
+      "$numberLong": "1669813345910"
     }
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1669708407275"
+      "$numberLong": "1669813345910"
     }
   },
   "__v": 0
 },{
   "_id": {
-    "$oid": "6385ba8c931657a6f8b18fa3"
+    "$oid": "63875471b311c9314c5af6dc"
   },
   "name": "KTPM 19_3",
   "shortDesc": "Kiến trúc phần mềm 19_3 2022 - 2023",
@@ -27,37 +27,18 @@
   "active": true,
   "createdAt": {
     "$date": {
-      "$numberLong": "1669708428202"
+      "$numberLong": "1669813361294"
     }
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1669708428202"
+      "$numberLong": "1669813361294"
     }
   },
   "__v": 0
 },{
   "_id": {
-    "$oid": "6385bb07931657a6f8b1905c"
-  },
-  "name": "Web Group",
-  "shortDesc": "Exclusive Group",
-  "photo": "https://gstatic.com/classroom/themes/img_read.jpg",
-  "active": true,
-  "createdAt": {
-    "$date": {
-      "$numberLong": "1669708551356"
-    }
-  },
-  "updatedAt": {
-    "$date": {
-      "$numberLong": "1669708551356"
-    }
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "63866197f9b35b9baca69907"
+    "$oid": "6388cb601d2d2e28ce46ff71"
   },
   "name": "DotA2",
   "shortDesc": "Defense of the Ancients 2",
@@ -65,31 +46,69 @@
   "active": true,
   "createdAt": {
     "$date": {
-      "$numberLong": "1669751191135"
+      "$numberLong": "1669909344442"
     }
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1669751191135"
+      "$numberLong": "1669909344442"
     }
   },
   "__v": 0
 },{
   "_id": {
-    "$oid": "6386d7ae73326ff0c6630470"
+    "$oid": "6388d5d23a4fa182e605d46f"
   },
-  "name": "Group 01",
-  "shortDesc": "Short Description for Group 01",
+  "name": "Group01",
+  "shortDesc": "Group01's Short Description",
   "photo": "https://gstatic.com/classroom/themes/img_read.jpg",
   "active": true,
   "createdAt": {
     "$date": {
-      "$numberLong": "1669781422410"
+      "$numberLong": "1669912018724"
     }
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1669781422410"
+      "$numberLong": "1669912018724"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6394b37d333341c89a7ac7d9"
+  },
+  "name": "Group02",
+  "shortDesc": "Text",
+  "photo": "https://gstatic.com/classroom/themes/img_read.jpg",
+  "active": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670689661101"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670689661101"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6395b096e2fb0f30b57cbca9"
+  },
+  "name": "Group 03",
+  "shortDesc": "Text for description group 03",
+  "photo": "https://gstatic.com/classroom/themes/img_read.jpg",
+  "active": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670754454537"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670754454537"
     }
   },
   "__v": 0

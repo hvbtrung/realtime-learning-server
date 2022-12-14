@@ -1,0 +1,134 @@
+[{
+  "_id": {
+    "$oid": "6395bf4e19c7b6c6d7af6009"
+  },
+  "title": "Fifth Presentation",
+  "owner": {
+    "$oid": "6388d5bd3a4fa182e605d463"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670758222231"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670758337585"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6395c6c519c7b6c6d7af605f"
+  },
+  "title": "Sixth Presentation",
+  "owner": {
+    "$oid": "6388d5bd3a4fa182e605d463"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670760133711"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670761425477"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6395cbc819c7b6c6d7af6070"
+  },
+  "title": "Seventh Presentation 01",
+  "owner": {
+    "$oid": "6388d5bd3a4fa182e605d463"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670761416261"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670762372504"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6395cf3aac7714b8d64e1399"
+  },
+  "title": "No none nobody alone",
+  "owner": {
+    "$oid": "6388d5bd3a4fa182e605d463"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670762298659"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670762298659"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6395d50302a318818519fd20"
+  },
+  "title": "My first presentation",
+  "owner": {
+    "$oid": "6387544ab311c9314c5af6c6"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1670763779269"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1670763779269"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6399cc8c6c56147bfa47060b"
+  },
+  "title": "Environmental Pollution",
+  "owner": {
+    "$oid": "63875417b311c9314c5af6bd"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671023756895"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1671023756895"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6399cf766c56147bfa470632"
+  },
+  "title": "Vietnamese History",
+  "owner": {
+    "$oid": "63875417b311c9314c5af6bd"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671024502436"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1671024502436"
+    }
+  },
+  "__v": 0
+}]

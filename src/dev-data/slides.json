@@ -1,0 +1,313 @@
+[{
+  "_id": {
+    "$oid": "6399cd926c56147bfa470622"
+  },
+  "context": "context",
+  "description": "description",
+  "question": "How many types of pollution?",
+  "options": [
+    {
+      "name": "2",
+      "counter": 2
+    },
+    {
+      "name": "3",
+      "counter": 3
+    },
+    {
+      "name": "4",
+      "counter": 2
+    },
+    {
+      "name": "5",
+      "counter": 8
+    }
+  ],
+  "presentationId": {
+    "$oid": "6399cc8c6c56147bfa47060b"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671024018763"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1671024018763"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6399ce226c56147bfa470624"
+  },
+  "context": "context",
+  "description": "description",
+  "question": "What are three major types of pollution?",
+  "options": [
+    {
+      "name": "Air pollution, Noise pollution, Water pollution",
+      "counter": 2
+    },
+    {
+      "name": "Water pollution, Noise pollution, Land pollution",
+      "counter": 4
+    },
+    {
+      "name": "Air pollution, Noise pollution, Land pollution",
+      "counter": 4
+    },
+    {
+      "name": "Air pollution, Water pollution, Land pollution",
+      "counter": 6
+    }
+  ],
+  "presentationId": {
+    "$oid": "6399cc8c6c56147bfa47060b"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671024162374"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1671024162374"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6399ce996c56147bfa470626"
+  },
+  "context": "context",
+  "description": "description",
+  "question": "What is environmental pollution?",
+  "options": [
+    {
+      "name": "It is a natural environmental that is dirty",
+      "counter": 2
+    },
+    {
+      "name": "Adverse effect on the production process",
+      "counter": 5
+    },
+    {
+      "name": "The loss of reserve resources",
+      "counter": 0
+    },
+    {
+      "name": "Caused by human activities",
+      "counter": 1
+    }
+  ],
+  "presentationId": {
+    "$oid": "6399cc8c6c56147bfa47060b"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671024281494"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1671024281494"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6399ced46c56147bfa470628"
+  },
+  "context": "context",
+  "description": "description",
+  "question": "Some activities cause air pollution such as?",
+  "options": [
+    {
+      "name": "Forest fires, means of transport",
+      "counter": 1
+    },
+    {
+      "name": "Forest fire, cooking in the family",
+      "counter": 0
+    },
+    {
+      "name": "Means of transport, industrial production",
+      "counter": 5
+    },
+    {
+      "name": "Forest fires, industrial production",
+      "counter": 2
+    }
+  ],
+  "presentationId": {
+    "$oid": "6399cc8c6c56147bfa47060b"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671024340100"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1671024340100"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6399cfa76c56147bfa470638"
+  },
+  "context": "context",
+  "description": "description",
+  "question": "Who named our country Van Xuan?",
+  "options": [
+    {
+      "name": "Li Bach",
+      "counter": 2
+    },
+    {
+      "name": "Ngo Quyen",
+      "counter": 6
+    },
+    {
+      "name": "Ly Bon",
+      "counter": 2
+    },
+    {
+      "name": "Ly Cong Uan",
+      "counter": 1
+    }
+  ],
+  "presentationId": {
+    "$oid": "6399cf766c56147bfa470632"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671024551992"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1671024551992"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6399cfc66c56147bfa47063a"
+  },
+  "context": "context",
+  "description": "description",
+  "question": "How many kings in the Ly dynasty?",
+  "options": [
+    {
+      "name": "1",
+      "counter": 0
+    },
+    {
+      "name": "12",
+      "counter": 3
+    },
+    {
+      "name": "9",
+      "counter": 7
+    },
+    {
+      "name": "8",
+      "counter": 8
+    }
+  ],
+  "presentationId": {
+    "$oid": "6399cf766c56147bfa470632"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671024582744"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1671024582744"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6399cfef6c56147bfa47063c"
+  },
+  "context": "context",
+  "description": "description",
+  "question": "What is another name for Tran Quoc Tuan?",
+  "options": [
+    {
+      "name": "Tran Hung Dao",
+      "counter": 4
+    },
+    {
+      "name": "Tran Quoc Toan",
+      "counter": 5
+    },
+    {
+      "name": "Tran Khanh Du",
+      "counter": 3
+    },
+    {
+      "name": "Tran Nhat Duat",
+      "counter": 1
+    }
+  ],
+  "presentationId": {
+    "$oid": "6399cf766c56147bfa470632"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671024623589"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1671024623589"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6399d0636c56147bfa47063e"
+  },
+  "context": "context",
+  "description": "description",
+  "question": "Before World War I, what classes were there in Vietnam?",
+  "options": [
+    {
+      "name": "Feudal landlords and peasants",
+      "counter": 1
+    },
+    {
+      "name": "Feudal landlords, peasants, bourgeois, petty bourgeois and workers",
+      "counter": 0
+    },
+    {
+      "name": "Feudal landlords, peasants and workers",
+      "counter": 7
+    },
+    {
+      "name": "Feudal landlords, peasants and petty bourgeois",
+      "counter": 2
+    }
+  ],
+  "presentationId": {
+    "$oid": "6399cf766c56147bfa470632"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671024739921"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1671024739921"
+    }
+  },
+  "__v": 0
+}]

@@ -1,133 +1,208 @@
 [{
   "_id": {
-    "$oid": "6385ba77931657a6f8b18f9b"
+    "$oid": "63875461b311c9314c5af6d4"
   },
   "userId": {
-    "$oid": "637d0364cebbd0ce86a65f01"
+    "$oid": "6387544ab311c9314c5af6c6"
   },
   "groupId": {
-    "$oid": "6385ba77931657a6f8b18f99"
+    "$oid": "63875461b311c9314c5af6d2"
   },
   "role": "ROLE_OWNER",
   "__v": 0
 },{
   "_id": {
-    "$oid": "6385ba8c931657a6f8b18fa5"
+    "$oid": "63875471b311c9314c5af6de"
   },
   "userId": {
-    "$oid": "637d0364cebbd0ce86a65f01"
+    "$oid": "6387544ab311c9314c5af6c6"
   },
   "groupId": {
-    "$oid": "6385ba8c931657a6f8b18fa3"
+    "$oid": "63875471b311c9314c5af6dc"
   },
   "role": "ROLE_OWNER",
   "__v": 0
 },{
   "_id": {
-    "$oid": "6385ba9f931657a6f8b18fc3"
+    "$oid": "6387551eb311c9314c5af829"
   },
   "userId": {
-    "$oid": "637d06f7703b19a5c2624e5b"
+    "$oid": "63875417b311c9314c5af6bd"
   },
   "groupId": {
-    "$oid": "6385ba77931657a6f8b18f99"
+    "$oid": "63875461b311c9314c5af6d2"
+  },
+  "role": "ROLE_MEMBER",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6388cb601d2d2e28ce46ff73"
+  },
+  "userId": {
+    "$oid": "6387684cb275566aca82ca11"
+  },
+  "groupId": {
+    "$oid": "6388cb601d2d2e28ce46ff71"
+  },
+  "role": "ROLE_OWNER",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6388cd0f1d2d2e28ce4700c0"
+  },
+  "userId": {
+    "$oid": "6387684cb275566aca82ca11"
+  },
+  "groupId": {
+    "$oid": "63875461b311c9314c5af6d2"
+  },
+  "role": "ROLE_MEMBER",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6388d5d23a4fa182e605d471"
+  },
+  "userId": {
+    "$oid": "6388d5bd3a4fa182e605d463"
+  },
+  "groupId": {
+    "$oid": "6388d5d23a4fa182e605d46f"
+  },
+  "role": "ROLE_OWNER",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6394b2cc333341c89a7ac79b"
+  },
+  "userId": {
+    "$oid": "6387544ab311c9314c5af6c6"
+  },
+  "groupId": {
+    "$oid": "6388d5d23a4fa182e605d46f"
   },
   "role": "ROLE_COOWNER",
   "__v": 0
 },{
   "_id": {
-    "$oid": "6385baa5931657a6f8b18fd5"
+    "$oid": "6394b37d333341c89a7ac7db"
   },
   "userId": {
-    "$oid": "638035bbc0a870fa11b35c0e"
+    "$oid": "6388d5bd3a4fa182e605d463"
   },
   "groupId": {
-    "$oid": "6385ba77931657a6f8b18f99"
-  },
-  "role": "ROLE_MEMBER",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "6385bacb931657a6f8b1901b"
-  },
-  "userId": {
-    "$oid": "637d06f7703b19a5c2624e5b"
-  },
-  "groupId": {
-    "$oid": "6385ba8c931657a6f8b18fa3"
-  },
-  "role": "ROLE_MEMBER",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "6385badb931657a6f8b1903f"
-  },
-  "userId": {
-    "$oid": "638035bbc0a870fa11b35c0e"
-  },
-  "groupId": {
-    "$oid": "6385ba8c931657a6f8b18fa3"
-  },
-  "role": "ROLE_MEMBER",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "6385bb07931657a6f8b1905e"
-  },
-  "userId": {
-    "$oid": "637d06f7703b19a5c2624e5b"
-  },
-  "groupId": {
-    "$oid": "6385bb07931657a6f8b1905c"
+    "$oid": "6394b37d333341c89a7ac7d9"
   },
   "role": "ROLE_OWNER",
   "__v": 0
 },{
   "_id": {
-    "$oid": "63866197f9b35b9baca69909"
+    "$oid": "639583e93b4ab85334fb2b0e"
   },
   "userId": {
-    "$oid": "6385c906ea33328d92ed0869"
+    "$oid": "639583e93b4ab85334fb2b0c"
   },
   "groupId": {
-    "$oid": "63866197f9b35b9baca69907"
+    "$oid": "639583e93b4ab85334fb2b0d"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6395840e1aed826e6958227b"
+  },
+  "userId": {
+    "$oid": "6395840e1aed826e69582279"
+  },
+  "groupId": {
+    "$oid": "6395840e1aed826e6958227a"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6395841c6be45dbcc880bd03"
+  },
+  "userId": {
+    "$oid": "6395841c6be45dbcc880bd01"
+  },
+  "groupId": {
+    "$oid": "6395841c6be45dbcc880bd02"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6395843040f3c1f23ac5c8c9"
+  },
+  "userId": {
+    "$oid": "6395842f40f3c1f23ac5c8c7"
+  },
+  "groupId": {
+    "$oid": "6395842f40f3c1f23ac5c8c8"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639584375657d50b6a0650d2"
+  },
+  "userId": {
+    "$oid": "639584375657d50b6a0650d0"
+  },
+  "groupId": {
+    "$oid": "639584375657d50b6a0650d1"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6395843a7ef45e662b5f9715"
+  },
+  "userId": {
+    "$oid": "6395843a7ef45e662b5f9713"
+  },
+  "groupId": {
+    "$oid": "6395843a7ef45e662b5f9714"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6395846ee7d73c788cebbd09"
+  },
+  "userId": {
+    "$oid": "6395846ee7d73c788cebbd07"
+  },
+  "groupId": {
+    "$oid": "6395846ee7d73c788cebbd08"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639584a08d1366ffde1adfd9"
+  },
+  "userId": {
+    "$oid": "639584a08d1366ffde1adfd7"
+  },
+  "groupId": {
+    "$oid": "639584a08d1366ffde1adfd8"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "639584c7764b34af6b2843a2"
+  },
+  "userId": {
+    "$oid": "639584c7764b34af6b2843a0"
+  },
+  "groupId": {
+    "$oid": "639584c7764b34af6b2843a1"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6395b096e2fb0f30b57cbcab"
+  },
+  "userId": {
+    "$oid": "6388d5bd3a4fa182e605d463"
+  },
+  "groupId": {
+    "$oid": "6395b096e2fb0f30b57cbca9"
   },
   "role": "ROLE_OWNER",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "6386d7ae73326ff0c6630472"
-  },
-  "userId": {
-    "$oid": "637d0364cebbd0ce86a65f01"
-  },
-  "groupId": {
-    "$oid": "6386d7ae73326ff0c6630470"
-  },
-  "role": "ROLE_OWNER",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "6386f12973326ff0c6630538"
-  },
-  "userId": {
-    "$oid": "6386f12073326ff0c6630523"
-  },
-  "groupId": {
-    "$oid": "6385ba77931657a6f8b18f99"
-  },
-  "role": "ROLE_MEMBER",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "6386f1a373326ff0c66305cc"
-  },
-  "userId": {
-    "$oid": "6386f12073326ff0c6630523"
-  },
-  "groupId": {
-    "$oid": "6385bb07931657a6f8b1905c"
-  },
-  "role": "ROLE_MEMBER",
   "__v": 0
 }]

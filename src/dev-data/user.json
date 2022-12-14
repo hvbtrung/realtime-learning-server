@@ -1,138 +1,115 @@
 [{
   "_id": {
-    "$oid": "637d0364cebbd0ce86a65f01"
+    "$oid": "63875417b311c9314c5af6bd"
   },
-  "email": "vinhnguyentran2001@gmail.com",
-  "password": null,
-  "name": "Vinh",
-  "photo": "https://lh3.googleusercontent.com/a/ALm5wu3ssCATYyv30YYRR13pUZL7SldPacIjRGeVGMXdSQ=s96-c",
-  "role": "user",
-  "active": false,
-  "googleId": "105498835080617110101",
-  "githubId": null,
-  "createdAt": {
-    "$date": {
-      "$numberLong": "1669137252310"
-    }
-  },
-  "updatedAt": {
-    "$date": {
-      "$numberLong": "1669137252310"
-    }
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "637d06f7703b19a5c2624e5b"
-  },
-  "email": "webadvanced2022@gmail.com",
-  "password": null,
-  "name": "Advanced update",
-  "photo": "http://res.cloudinary.com/dcb3l1cvi/image/upload/v1669777678/upload/txgjxwij4ifvlsoabuki.jpg",
-  "role": "user",
-  "active": false,
-  "googleId": "104280334394919552848",
-  "githubId": null,
-  "createdAt": {
-    "$date": {
-      "$numberLong": "1669138167211"
-    }
-  },
-  "updatedAt": {
-    "$date": {
-      "$numberLong": "1669777678795"
-    }
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "638035bbc0a870fa11b35c0e"
-  },
-  "email": "abc@gmail.com",
-  "password": "$2a$10$QQoSoBteaJtvSIJSkdSO4OmyK6H.rgSoAruh5jeVVszKslrxw5YYi",
-  "name": "Anh",
-  "photo": "https://res.cloudinary.com/dcb3l1cvi/image/upload/v1668656456/realtime_learning/default_unjvlj.jpg",
-  "role": "user",
-  "active": false,
-  "googleId": null,
-  "githubId": null,
-  "createdAt": {
-    "$date": {
-      "$numberLong": "1669346747250"
-    }
-  },
-  "updatedAt": {
-    "$date": {
-      "$numberLong": "1669346747250"
-    }
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "6385c906ea33328d92ed0869"
-  },
-  "email": "hvbtrung@gmail.com",
-  "password": "$2a$10$OLlihENffLXMiIFbQsagtOSTonalogty5LaNwh49qGpxgcQ8ngcdS",
+  "email": "dragontrungks123@gmail.com",
+  "password": "$2a$10$VPM0ujhwaJyQQrYmqtau/uOEWaF3honIyg5Rx5OmqSsKtda/hk24K",
   "name": "Bao Trung",
-  "photo": "http://res.cloudinary.com/dcb3l1cvi/image/upload/v1669750917/upload/rxrozbuzv6fzpmtxgsow.jpg",
+  "photo": "http://res.cloudinary.com/dcb3l1cvi/image/upload/v1671023800/upload/vqh0cvfj1a8za6qtvipt.jpg",
   "role": "user",
   "active": true,
   "googleId": null,
   "githubId": null,
   "createdAt": {
     "$date": {
-      "$numberLong": "1669712134764"
+      "$numberLong": "1669813271488"
     }
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1669750917477"
+      "$numberLong": "1671023800243"
     }
   },
   "__v": 0
 },{
   "_id": {
-    "$oid": "6386dc8073326ff0c66304c9"
+    "$oid": "6387544ab311c9314c5af6c6"
   },
-  "email": "ngocvinhhnguyentran2001@gmail.com",
-  "password": "$2a$10$JZONN0HEmf.UF7ojgImtRuqxABlzgCnUOy7IR7AN2V8ecQDzVJBV.",
-  "name": "123456",
-  "photo": "https://res.cloudinary.com/dcb3l1cvi/image/upload/v1668656456/realtime_learning/default_unjvlj.jpg",
+  "email": "webadvanced2022@gmail.com",
+  "password": null,
+  "name": "Advanced",
+  "photo": "https://lh3.googleusercontent.com/a/ALm5wu2gJcA_e2ELxzoCaoddlnf9c5Wx5oNEFKtWJjDk=s96-c",
   "role": "user",
   "active": false,
+  "googleId": "104280334394919552848",
+  "githubId": null,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669813322531"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1669813322531"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6387643ab275566aca82ca09"
+  },
+  "email": "hvbtrung@gmail.com",
+  "password": null,
+  "name": "Trung",
+  "photo": "https://lh3.googleusercontent.com/a/ALm5wu2tYOEMDWlk_XAIuFEnKBaTQ-HzetKef67n9Xnz=s96-c",
+  "role": "user",
+  "active": false,
+  "googleId": "113028372518140451749",
+  "githubId": null,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1669817402245"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1669817402245"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6387684cb275566aca82ca11"
+  },
+  "email": "hovietbaotrung1909@gmail.com",
+  "password": "$2a$10$FrD1RffZ.aZE4JlN.bO5luI.7nOe2KqDKBF/cgBKbFptxuHzcZc/e",
+  "name": "BTrung",
+  "photo": "https://res.cloudinary.com/dcb3l1cvi/image/upload/v1668656456/realtime_learning/default_unjvlj.jpg",
+  "role": "user",
+  "active": true,
   "googleId": null,
   "githubId": null,
   "createdAt": {
     "$date": {
-      "$numberLong": "1669782656745"
+      "$numberLong": "1669818444567"
     }
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1669782656745"
+      "$numberLong": "1669853074556"
     }
   },
   "__v": 0
 },{
   "_id": {
-    "$oid": "6386f12073326ff0c6630523"
+    "$oid": "6388d5bd3a4fa182e605d463"
   },
-  "email": "ngocvinhnguyentran2001@gmail.com",
+  "email": "vinhnguyentran2001@gmail.com",
   "password": null,
-  "name": "Vinh",
-  "photo": "https://lh3.googleusercontent.com/a/ALm5wu2J0m4IULF805ijMjx5S8lHlp-5pYyWEUEvX8zF=s96-c",
+  "name": "Nguyễn Trần Vinh",
+  "photo": "http://res.cloudinary.com/dcb3l1cvi/image/upload/v1670762254/upload/sbkst8vp2ibpebcfn5h7.jpg",
   "role": "user",
   "active": false,
-  "googleId": "108793017038364339195",
+  "googleId": "105498835080617110101",
   "githubId": null,
   "createdAt": {
     "$date": {
-      "$numberLong": "1669787936417"
+      "$numberLong": "1669911997889"
     }
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1669787936417"
+      "$numberLong": "1670762254925"
     }
   },
   "__v": 0
