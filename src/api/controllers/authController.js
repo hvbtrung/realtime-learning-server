@@ -120,7 +120,7 @@ exports.login = async (req, res, next) => {
 
   res.status(200).json({
     status: "success",
-    accessToken,
+    token: accessToken,
     data: { user },
   });
 };
@@ -135,7 +135,7 @@ exports.socialLoginSuccess = (req, res) => {
 
     res.status(201).json({
       status: "success",
-      accessToken,
+      token: accessToken,
       data: { user: req.user },
     });
   }
@@ -227,7 +227,7 @@ exports.updateMyPassword = async (req, res, next) => {
 
   res.status(200).json({
     status: 'success',
-    accessToken,
+    token: accessToken,
     data: { user }
   })
 }
