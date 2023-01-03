@@ -34,10 +34,39 @@ module.exports = {
     }
   },
 
+  delete: async ({ userId, groupId }) => {
+    try {
+      let results = await GroupDetail.find({
+        userId,
+        groupId: mongoose.Types.ObjectId(groupId),
+        role: "ROLE_OWNER",
+      });
+
+      if (results.length == 0) {
+        return null;
+      }
+
+      const filter = { _id: groupId };
+      const updated = { active: false };
+      await Group.findOneAndUpdate(filter, updated);
+
+      return results;
+    } catch (e) {
+      console.error(e);
+      return null;
+    }
+  },
   findGroupsByUserId: async ({ userId }) => {
     try {
       userId = mongoose.Types.ObjectId(userId);
-      const results = await GroupDetail.find({ userId }).populate("groupId");
+      let results = await GroupDetail.find({
+        userId,
+      }).populate({
+        path: "groupId",
+        match: { active: true },
+      });
+
+      results = results.filter((group) => group.groupId != null);
 
       return results;
     } catch (e) {
@@ -66,7 +95,6 @@ module.exports = {
     const send_to = inviteeEmail;
     const send_from = process.env.EMAIL_USER;
 
-    // link = `${process.env.CLIENT_URL}/group/join?${groupId}`;
     const message = `
         <h2>Hello buddy,</h2>
         <p>Please use the url below to join group</p>

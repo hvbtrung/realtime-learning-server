@@ -74,4 +74,22 @@ module.exports = {
       message: "Email not sent, please try again",
     });
   },
+
+  deleteGroup: async (req, res) => {
+    var { groupId } = req.params;
+
+    const result = await groupService.delete({ groupId, userId: req.user._id });
+
+    if (result) {
+      return res.json({
+        status: "success",
+        message: "Delete group successfully",
+      });
+    }
+
+    return res.json({
+      status: "error",
+      message: "Delete group failure",
+    });
+  },
 };
