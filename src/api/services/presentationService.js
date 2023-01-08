@@ -1,5 +1,4 @@
 const presentationSchema = require("../models/presentationModel");
-const mongoose = require("mongoose");
 
 module.exports = {
   getPresentationsByUserId: async ({ userId }) => {
@@ -41,7 +40,8 @@ module.exports = {
 
   update: async ({ userId, presentationId, titlePresentation }) => {
     try {
-      const filter = { owner: userId, _id: presentationId };
+      // const filter = { owner: userId, _id: presentationId };
+      const filter = { _id: presentationId };
       const updated = { title: titlePresentation };
       await presentationSchema.findOneAndUpdate(filter, updated);
 
