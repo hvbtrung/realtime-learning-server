@@ -13,7 +13,10 @@ module.exports = {
       const result = await newMessage.save();
 
       if (result) {
-        return { status: "success", message: "Save message success" };
+        return {
+          status: "success",
+          message: "Save message success",
+        };
       }
 
       throw Error;
@@ -23,16 +26,30 @@ module.exports = {
     }
   },
 
+  delete: async ({ presentationId }) => {
+    try {
+      const filter = {
+        presentationId: presentationId,
+      };
+
+      await Message.findOneAndDelete(filter);
+
+      return { status: "success", message: "delete message success" };
+    } catch (e) {
+      console.Error(e);
+      return { status: "error", message: e };
+    }
+  },
+
   getAll: async ({ presentationId }) => {
     try {
       var results = await Message.find({
         presentationId: presentationId,
       }).populate({ path: "sender", select: "name" });
 
-      console.log(results);
       return { status: "success", messages: results };
     } catch (err) {
-      console.error(e);
+      console.Error(e);
       return { status: "error", message: e };
     }
   },

@@ -20,7 +20,7 @@ module.exports = {
         userId: user._id,
       });
 
-      if (isExist) {
+      if (isExist.length > 0) {
         return {
           status: "error",
           message: "The member is already exist",
@@ -46,6 +46,21 @@ module.exports = {
     }
   },
 
+  delete: async ({ presentationId }) => {
+    try {
+      const filter = {
+        presentationId: presentationId,
+      };
+
+      await UserPresentation.findOneAndDelete(filter);
+
+      return { status: "success", message: "Deleting a presentation success" };
+    } catch (e) {
+      console.Error(e);
+      return { status: "error", message: e };
+    }
+  },
+
   getAll: async ({ userId }) => {
     try {
       var results = await UserPresentation.find({
@@ -55,6 +70,9 @@ module.exports = {
       var presentations = [];
 
       for (var presentation of results) {
+        if (presentation.presentationId === null) {
+          continue;
+        }
         var owner = await User.findOne({
           _id: presentation.presentationId.owner,
         });
@@ -74,7 +92,7 @@ module.exports = {
 
       return { status: "success", presentations: presentations };
     } catch (err) {
-      console.error(e);
+      console.Error(e);
       return { status: "error", message: e };
     }
   },

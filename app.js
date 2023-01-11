@@ -16,7 +16,8 @@ const groupRoute = require("./src/api/routes/groupRoute");
 const presentationRoute = require("./src/api/routes/presentationRoute");
 const slideRoute = require("./src/api/routes/slideRoute");
 const messageRoute = require("./src/api/routes/messageRoute");
-
+const questionRoute = require("./src/api/routes/questionRoute");
+const questionVoteRoute = require("./src/api/routes/questionVoteRoute");
 const app = express();
 
 const corsOptions = {
@@ -56,6 +57,8 @@ app.use("/api/groups", groupRoute);
 app.use("/api/presentations", presentationRoute);
 app.use("/api/slides", slideRoute);
 app.use("/api/messages", messageRoute);
+app.use("/api/questions", questionRoute);
+app.use("/api/vote", questionVoteRoute);
 
 // Routes
 app.get("/", (req, res) => {

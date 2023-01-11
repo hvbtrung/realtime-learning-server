@@ -1,4 +1,3 @@
-const presentationService = require("../services/presentationService");
 const messageService = require("../services/messageService");
 
 module.exports = {
@@ -17,30 +16,30 @@ module.exports = {
     }
     return res.json({
       status: results.status,
-      messages: results.message,
+      message: results.message,
     });
   },
 
   save: async (req, res) => {
     const { message, presentationId } = req.body.data;
 
-    let results = null;
-    results = await messageService.save({
+    let result = null;
+    result = await messageService.save({
       sender: req.user._id,
       presentationId: presentationId,
       message: message,
     });
 
-    if (results.status == "success") {
+    if (result.status == "success") {
       return res.status(200).json({
-        status: results.status,
-        presentations: results.presentations,
+        status: result.status,
+        message: result.message,
       });
     }
 
     return res.json({
-      status: results.status,
-      presentations: results.message,
+      status: result.status,
+      message: result.message,
     });
   },
 };

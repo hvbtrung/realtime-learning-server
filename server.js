@@ -1,7 +1,7 @@
 require("dotenv").config();
 const mongoose = require("mongoose");
 // const app = require("./app");
-const app = require("./src/socket/chat");
+const app = require("./src/socket/chat").server;
 
 // Connect to DB and start server
 const PORT = process.env.PORT || 4000;
