@@ -11,6 +11,14 @@ const presentationSchema = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
     },
+    isPresent: {
+      type: Boolean,
+      default: false
+    },
+    isPublic: {
+      type: Boolean,
+      default: false
+    }
   },
   {
     timestamps: { type: Number, default: new Date().getTime() },

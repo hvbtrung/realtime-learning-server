@@ -36,7 +36,8 @@
       "$numberLong": "1671024018763"
     }
   },
-  "__v": 0
+  "__v": 0,
+  "type": "Multiple Choice"
 },{
   "_id": {
     "$oid": "6399ce226c56147bfa470624"
@@ -75,7 +76,8 @@
       "$numberLong": "1671024162374"
     }
   },
-  "__v": 0
+  "__v": 0,
+  "type": "Multiple Choice"
 },{
   "_id": {
     "$oid": "6399ce996c56147bfa470626"
@@ -114,7 +116,8 @@
       "$numberLong": "1671024281494"
     }
   },
-  "__v": 0
+  "__v": 0,
+  "type": "Multiple Choice"
 },{
   "_id": {
     "$oid": "6399ced46c56147bfa470628"
@@ -153,7 +156,8 @@
       "$numberLong": "1671024340100"
     }
   },
-  "__v": 0
+  "__v": 0,
+  "type": "Multiple Choice"
 },{
   "_id": {
     "$oid": "6399cfa76c56147bfa470638"
@@ -192,7 +196,8 @@
       "$numberLong": "1671024551992"
     }
   },
-  "__v": 0
+  "__v": 0,
+  "type": "Multiple Choice"
 },{
   "_id": {
     "$oid": "6399cfc66c56147bfa47063a"
@@ -231,7 +236,8 @@
       "$numberLong": "1671024582744"
     }
   },
-  "__v": 0
+  "__v": 0,
+  "type": "Multiple Choice"
 },{
   "_id": {
     "$oid": "6399cfef6c56147bfa47063c"
@@ -270,7 +276,8 @@
       "$numberLong": "1671024623589"
     }
   },
-  "__v": 0
+  "__v": 0,
+  "type": "Multiple Choice"
 },{
   "_id": {
     "$oid": "6399d0636c56147bfa47063e"
@@ -309,5 +316,6 @@
       "$numberLong": "1671024739921"
     }
   },
-  "__v": 0
+  "__v": 0,
+  "type": "Multiple Choice"
 }]

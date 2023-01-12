@@ -11,6 +11,8 @@ router.use(authController.protect);
 
 router.get("/", presentationController.getAll);
 router.post("/", presentationController.createPresentation);
+router.get("/:id", presentationController.getOne);
+router.patch("/:id", presentationController.presentPresentation);
 router.post("/collab", userPresentationController.save);
 router.put("/", presentationController.updatePresentation);
 router.delete("/:presentationId", presentationController.deletePresentation);

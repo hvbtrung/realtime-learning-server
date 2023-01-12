@@ -2,29 +2,28 @@ const mongoose = require("mongoose");
 
 const slideSchema = new mongoose.Schema(
   {
-    context: {
-      type: String,
-      default: "context",
-    },
-    description: {
-      type: String,
-      default: "description",
-    },
-    question: {
-      type: String,
-      require: true,
-    },
-    options: {
-      type: [Object],
-      require: true,
-    },
-    typeId: {
-      type: mongoose.Schema.Types.ObjectId,
-      ref: "SlideType",
-    },
     presentationId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Presentation",
+    },
+    type: {
+      type: String, // MultipleChoice, Paragraph, Heading
+      require: true,
+    },
+    question: {
+      type: String,
+    },
+    options: {
+      type: [Object],
+    },
+    heading: {
+      type: String,
+    },
+    paragraph: {
+      type: String,
+    },
+    subHeading: {
+      type: String,
     },
   },
   {

@@ -1,4 +1,5 @@
 const presentationService = require("../services/presentationService");
+const Presentation = require("../models/presentationModel");
 const userPresentationService = require("../services/userPresentationService");
 
 module.exports = {
@@ -41,6 +42,30 @@ module.exports = {
       titlePresentation: titlePresentation,
     });
     return res.json(result);
+  },
+
+  presentPresentation: async (req, res) => {
+    const updatedPresentation = await Presentation.findByIdAndUpdate(req.params.id, req.body);
+
+    if (!updatedPresentation) {
+      const err = new Error("No slide found with that ID");
+      err.statusCode = 404;
+      throw err;
+    }
+
+    res.status(200).json({
+      status: 'success',
+      data: updatedPresentation
+    });
+  },
+
+  getOne: async (req, res) => {
+    const presentation = await Presentation.findById(req.params.id);
+
+    res.status(200).json({
+      status: 'success',
+      data: presentation
+    });
   },
 
   updatePresentation: async (req, res) => {
