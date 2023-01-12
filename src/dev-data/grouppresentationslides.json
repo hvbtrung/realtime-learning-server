@@ -1,0 +1,121 @@
+[{
+  "_id": {
+    "$oid": "63bf73c8d3eddd091b5184bf"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "groupId": {
+    "$oid": "000000000000000000000000"
+  },
+  "currentSlideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673491400374"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673491400374"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bf7476d3eddd091b5184d2"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "groupId": {
+    "$oid": "000000000000000000000000"
+  },
+  "currentSlideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673491574618"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673491574618"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bf74d9d3eddd091b518515"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "groupId": {
+    "$oid": "000000000000000000000000"
+  },
+  "currentSlideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673491673777"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673491673777"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bf75aebb5898ad2d41debf"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "groupId": {
+    "$oid": "000000000000000000000000"
+  },
+  "currentSlideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673491886543"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673491886543"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bf75f2bb5898ad2d41deea"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "groupId": {
+    "$oid": "000000000000000000000000"
+  },
+  "currentSlideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673491954442"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673491954442"
+    }
+  },
+  "__v": 0
+}]

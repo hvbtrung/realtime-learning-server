@@ -62,7 +62,7 @@
   "name": "Group01",
   "shortDesc": "Group01's Short Description",
   "photo": "https://gstatic.com/classroom/themes/img_read.jpg",
-  "active": true,
+  "active": false,
   "createdAt": {
     "$date": {
       "$numberLong": "1669912018724"
@@ -70,7 +70,7 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1669912018724"
+      "$numberLong": "1672745289204"
     }
   },
   "__v": 0
@@ -81,7 +81,7 @@
   "name": "Group02",
   "shortDesc": "Text",
   "photo": "https://gstatic.com/classroom/themes/img_read.jpg",
-  "active": true,
+  "active": false,
   "createdAt": {
     "$date": {
       "$numberLong": "1670689661101"
@@ -89,7 +89,7 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1670689661101"
+      "$numberLong": "1672745222141"
     }
   },
   "__v": 0
@@ -100,7 +100,7 @@
   "name": "Group 03",
   "shortDesc": "Text for description group 03",
   "photo": "https://gstatic.com/classroom/themes/img_read.jpg",
-  "active": true,
+  "active": false,
   "createdAt": {
     "$date": {
       "$numberLong": "1670754454537"
@@ -108,7 +108,159 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1670754454537"
+      "$numberLong": "1672745227905"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63a0623899f34c33a1d18094"
+  },
+  "name": "Test",
+  "shortDesc": "Test Des",
+  "photo": "https://gstatic.com/classroom/themes/img_read.jpg",
+  "active": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1671455288880"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1671455288880"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b410401619c046d10b7482"
+  },
+  "name": "abc",
+  "shortDesc": "saffffffffffff",
+  "photo": "https://gstatic.com/classroom/themes/img_read.jpg",
+  "active": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1672745024520"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1672745372469"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b4104c1619c046d10b748a"
+  },
+  "name": "a",
+  "shortDesc": "a",
+  "photo": "https://gstatic.com/classroom/themes/img_read.jpg",
+  "active": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1672745036348"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1672745412013"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b411f41619c046d10b74e7"
+  },
+  "name": "b",
+  "shortDesc": "b",
+  "photo": "https://gstatic.com/classroom/themes/img_read.jpg",
+  "active": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1672745460474"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1672745463037"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b4120b1619c046d10b74f5"
+  },
+  "name": "a",
+  "shortDesc": "a",
+  "photo": "https://gstatic.com/classroom/themes/img_read.jpg",
+  "active": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1672745483905"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1672745486930"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b412271619c046d10b7506"
+  },
+  "name": "c",
+  "shortDesc": "c",
+  "photo": "https://gstatic.com/classroom/themes/img_read.jpg",
+  "active": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1672745511531"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1672745516362"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b412331619c046d10b7514"
+  },
+  "name": "d",
+  "shortDesc": "d",
+  "photo": "https://gstatic.com/classroom/themes/img_read.jpg",
+  "active": false,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1672745523656"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1672745528654"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b4174f1619c046d10b755c"
+  },
+  "name": "Test Group",
+  "shortDesc": "Test Group",
+  "photo": "https://gstatic.com/classroom/themes/img_read.jpg",
+  "active": true,
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1672746831713"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1672746831713"
     }
   },
   "__v": 0

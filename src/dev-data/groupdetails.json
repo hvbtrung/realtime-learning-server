@@ -205,4 +205,148 @@
   },
   "role": "ROLE_OWNER",
   "__v": 0
+},{
+  "_id": {
+    "$oid": "63a02992b3574cead18ac98c"
+  },
+  "userId": {
+    "$oid": "63875417b311c9314c5af6bd"
+  },
+  "groupId": {
+    "$oid": "6388cb601d2d2e28ce46ff71"
+  },
+  "role": "ROLE_MEMBER",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63a0623899f34c33a1d18096"
+  },
+  "userId": {
+    "$oid": "63875417b311c9314c5af6bd"
+  },
+  "groupId": {
+    "$oid": "63a0623899f34c33a1d18094"
+  },
+  "role": "ROLE_OWNER",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b3fd563fdf2563f6fb5b1d"
+  },
+  "userId": {
+    "$oid": "6387544ab311c9314c5af6c6"
+  },
+  "groupId": {
+    "$oid": "6394b37d333341c89a7ac7d9"
+  },
+  "role": "ROLE_MEMBER",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b40e6cc8b1c7f9b744f0f8"
+  },
+  "userId": {
+    "$oid": "6388d5bd3a4fa182e605d463"
+  },
+  "groupId": {
+    "$oid": "63875471b311c9314c5af6dc"
+  },
+  "role": "ROLE_MEMBER",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b410401619c046d10b7484"
+  },
+  "userId": {
+    "$oid": "6388d5bd3a4fa182e605d463"
+  },
+  "groupId": {
+    "$oid": "63b410401619c046d10b7482"
+  },
+  "role": "ROLE_OWNER",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b4104c1619c046d10b748c"
+  },
+  "userId": {
+    "$oid": "6388d5bd3a4fa182e605d463"
+  },
+  "groupId": {
+    "$oid": "63b4104c1619c046d10b748a"
+  },
+  "role": "ROLE_OWNER",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b411f41619c046d10b74e9"
+  },
+  "userId": {
+    "$oid": "6388d5bd3a4fa182e605d463"
+  },
+  "groupId": {
+    "$oid": "63b411f41619c046d10b74e7"
+  },
+  "role": "ROLE_OWNER",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b4120b1619c046d10b74f7"
+  },
+  "userId": {
+    "$oid": "6388d5bd3a4fa182e605d463"
+  },
+  "groupId": {
+    "$oid": "63b4120b1619c046d10b74f5"
+  },
+  "role": "ROLE_OWNER",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b412271619c046d10b7508"
+  },
+  "userId": {
+    "$oid": "6388d5bd3a4fa182e605d463"
+  },
+  "groupId": {
+    "$oid": "63b412271619c046d10b7506"
+  },
+  "role": "ROLE_OWNER",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b412331619c046d10b7516"
+  },
+  "userId": {
+    "$oid": "6388d5bd3a4fa182e605d463"
+  },
+  "groupId": {
+    "$oid": "63b412331619c046d10b7514"
+  },
+  "role": "ROLE_OWNER",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b4174f1619c046d10b755e"
+  },
+  "userId": {
+    "$oid": "6388d5bd3a4fa182e605d463"
+  },
+  "groupId": {
+    "$oid": "63b4174f1619c046d10b755c"
+  },
+  "role": "ROLE_OWNER",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63b82d0ec1b2304c07bfdc3f"
+  },
+  "userId": {
+    "$oid": "6387544ab311c9314c5af6c6"
+  },
+  "groupId": {
+    "$oid": "63b4174f1619c046d10b755c"
+  },
+  "role": "ROLE_MEMBER",
+  "__v": 0
 }]

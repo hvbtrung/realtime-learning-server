@@ -1,0 +1,1519 @@
+[{
+  "_id": {
+    "$oid": "63bb13481de71a9915587455"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 1",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673204552343"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673204552343"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bb134d1de71a991558745c"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 3",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673204557494"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673204557494"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bb13501de71a9915587463"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 1",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673204560486"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673204560486"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bebdb2112a1183604bcfd5"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 2",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673444786422"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673444786422"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bebf6c335e73dbb70baeab"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 1",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673445228113"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673445228113"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63beca4af2e5fa9a3b2e1ac1"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 3",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673448010147"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673448010147"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63beca56f2e5fa9a3b2e1ac5"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 3",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673448022043"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673448022043"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63becd06f2e5fa9a3b2e1ad4"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 1",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673448710432"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673448710432"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63becd1df2e5fa9a3b2e1ae0"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 1",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673448733379"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673448733379"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bed11e686c2f6a596e61f7"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 3",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673449758899"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673449758899"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bed2011e4f80562794b6c7"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 3",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673449985222"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673449985222"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bed2e747a1f6d48ae7a050"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 3",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673450215454"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673450215454"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bed40f47a1f6d48ae7a058"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 3",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673450511703"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673450511703"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bed485adbb56f41236f004"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 3",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673450629560"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673450629560"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bed5286225edcd55b9e098"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 3",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673450792923"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673450792923"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bed5bc324d1e44d7c0e1e7"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 3",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673450940129"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673450940129"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bed5bf324d1e44d7c0e1ea"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 3",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673450943985"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673450943985"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bed762324d1e44d7c0e1f2"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 3",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673451362899"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673451362899"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bedf42e43762b6bbed7358"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 3",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673453378813"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673453378813"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bedfb26113a69ecd727917"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 3",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673453490213"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673453490213"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bee0d571dc19c1978ff3f6"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 1",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673453781306"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673453781306"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bee17971dc19c1978ff3fd"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 1",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673453945514"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673453945514"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bee18371dc19c1978ff404"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 1",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673453955446"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673453955446"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bee19471dc19c1978ff410"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 1",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673453972184"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673453972184"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bee1b271dc19c1978ff41c"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 1",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673454002855"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673454002855"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bee1d971dc19c1978ff42b"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 1",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673454041769"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673454041769"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bee23f71dc19c1978ff439"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 1",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673454143342"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673454143342"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bee24d71dc19c1978ff441"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 1",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673454157852"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673454157852"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bee26071dc19c1978ff455"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 2",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673454176570"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673454176570"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bee27f71dc19c1978ff45d"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 2",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673454207499"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673454207499"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bee28571dc19c1978ff464"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 2",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673454213902"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673454213902"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bee29671dc19c1978ff470"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 2",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673454230223"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673454230223"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bee2f971dc19c1978ff479"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 2",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673454329547"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673454329547"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bee44c708bbf3f3e462584"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 2",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673454668453"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673454668453"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bee466708bbf3f3e46258c"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 2",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673454694308"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673454694308"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bee4f9708bbf3f3e462590"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 2",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673454841192"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673454841192"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bee6ccdf4a783ca8927a83"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 2",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673455308452"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673455308452"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bee7a8e30f7a1d0fdea8b1"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 2",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673455528952"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673455528952"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bee859a8c8d33dfd30f79a"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 2",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673455705429"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673455705429"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bee8d6a8c8d33dfd30f7ac"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 2",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673455830375"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673455830375"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bee90aa8c8d33dfd30f7c0"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 1",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673455882643"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673455882643"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bee9a7a8c8d33dfd30f7c9"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 1",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673456039815"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673456039815"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63beea3873084fe4b33742fb"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 1",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673456184186"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673456184186"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63beea6273084fe4b3374302"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 1",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673456226010"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673456226010"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63beec928fddc0704d942fe4"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 1",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673456786615"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673456786615"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63beeceb8fddc0704d942ffb"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 1",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673456875574"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673456875574"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63beed228fddc0704d94300d"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 2",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673456930685"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673456930685"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63beed6f8fddc0704d94301a"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 2",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673457007787"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673457007787"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63beeda08fddc0704d94302e"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 2",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673457056102"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673457056102"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63beedbe8fddc0704d94303b"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 2",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673457086202"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673457086202"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63beee518fddc0704d94305e"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 2",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673457233023"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673457233023"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bef196aa0436f0601fcd4a"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 3",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673458070576"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673458070576"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bef1e4aa0436f0601fcd64"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 3",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673458148436"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673458148436"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bef241aa0436f0601fcd79"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 3",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673458241708"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673458241708"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bef35eaa0436f0601fcd90"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 3",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673458526405"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673458526405"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bef484aa0436f0601fcd9b"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 3",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673458820552"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673458820552"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bef48daa0436f0601fcda0"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 1",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673458829445"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673458829445"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bef491aa0436f0601fcda5"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 1",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673458833794"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673458833794"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bef495aa0436f0601fcdaa"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 1",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673458837662"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673458837662"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bef4c2aa0436f0601fcdc4"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 1",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673458882676"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673458882676"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bef52faa0436f0601fcddd"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 1",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673458991470"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673458991470"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bef579aa0436f0601fcdf1"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 2",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673459065253"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673459065253"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bef65d2fba6ca755e3413a"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 2",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673459293661"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673459293661"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63befe44a8f6baab0cad3f5f"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 2",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673461316171"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673461316171"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bf75fdbb5898ad2d41def4"
+  },
+  "presentationId": {
+    "$oid": "639cbac6f28cfd0fcefcb073"
+  },
+  "slideId": {
+    "$oid": "63b5c5592b77c76570300a16"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "Option 2",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673491965551"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673491965551"
+    }
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bf765bbb5898ad2d41df35"
+  },
+  "presentationId": {
+    "$oid": "6399cc8c6c56147bfa47060b"
+  },
+  "slideId": {
+    "$oid": "6399cd926c56147bfa470622"
+  },
+  "user": "hovietbaotrung1909@gmail.com",
+  "choice": "4",
+  "createdAt": {
+    "$date": {
+      "$numberLong": "1673492059174"
+    }
+  },
+  "updatedAt": {
+    "$date": {
+      "$numberLong": "1673492059174"
+    }
+  },
+  "__v": 0
+}]

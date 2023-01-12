@@ -1,0 +1,121 @@
+[{
+  "_id": {
+    "$oid": "63befcca70115e6d9fa2bf0d"
+  },
+  "voter": {
+    "$oid": "6388d5bd3a4fa182e605d463"
+  },
+  "questionId": {
+    "$oid": "63befbf570115e6d9fa2be71"
+  },
+  "votingType": "up_vote",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63befce770115e6d9fa2bf42"
+  },
+  "voter": {
+    "$oid": "6388d5bd3a4fa182e605d463"
+  },
+  "questionId": {
+    "$oid": "63befbd370115e6d9fa2be3d"
+  },
+  "votingType": "up_vote",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63befcfe70115e6d9fa2bf67"
+  },
+  "voter": {
+    "$oid": "6388d5bd3a4fa182e605d463"
+  },
+  "questionId": {
+    "$oid": "63befcfe70115e6d9fa2bf66"
+  },
+  "votingType": "up_vote",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bf4bd3c13f8cab4da55bb9"
+  },
+  "voter": {
+    "$oid": "6388d5bd3a4fa182e605d463"
+  },
+  "questionId": {
+    "$oid": "63bf4bd3c13f8cab4da55bb8"
+  },
+  "votingType": "up_vote",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bf6ffa931e3cf469a35e17"
+  },
+  "voter": {
+    "$oid": "6388d5bd3a4fa182e605d463"
+  },
+  "questionId": {
+    "$oid": "63bf4bcfc13f8cab4da55baf"
+  },
+  "votingType": "up_vote",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bf711fb4fc1b7d2114e8f4"
+  },
+  "voter": {
+    "$oid": "6388d5bd3a4fa182e605d463"
+  },
+  "questionId": {
+    "$oid": "63bf55dad0ae7c61c36bd068"
+  },
+  "votingType": "up_vote",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bf747dd3eddd091b5184dd"
+  },
+  "voter": {
+    "$oid": "63875417b311c9314c5af6bd"
+  },
+  "questionId": {
+    "$oid": "63bf747dd3eddd091b5184dc"
+  },
+  "votingType": "up_vote",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bf747ed3eddd091b5184e5"
+  },
+  "voter": {
+    "$oid": "63875417b311c9314c5af6bd"
+  },
+  "questionId": {
+    "$oid": "63bf747ed3eddd091b5184e4"
+  },
+  "votingType": "down_vote",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bf747fd3eddd091b5184ed"
+  },
+  "voter": {
+    "$oid": "63875417b311c9314c5af6bd"
+  },
+  "questionId": {
+    "$oid": "63bf747fd3eddd091b5184ec"
+  },
+  "votingType": "up_vote",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bf74ecd3eddd091b518522"
+  },
+  "voter": {
+    "$oid": "6387684cb275566aca82ca11"
+  },
+  "questionId": {
+    "$oid": "63bf747bd3eddd091b5184d5"
+  },
+  "votingType": "up_vote",
+  "__v": 0
+}]

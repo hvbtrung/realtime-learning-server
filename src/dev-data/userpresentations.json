@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "63ba43ead84ead3fabc1c54f"
+  },
+  "userId": {
+    "$oid": "6387544ab311c9314c5af6c6"
+  },
+  "presentationId": {
+    "$oid": "6395cf3aac7714b8d64e1399"
+  },
+  "role": "sharedwithme",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bebb3527b311ef646cca70"
+  },
+  "userId": {
+    "$oid": "6388d5bd3a4fa182e605d463"
+  },
+  "presentationId": {
+    "$oid": "6395d50302a318818519fd20"
+  },
+  "role": "sharedwithme",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "63bf7626bb5898ad2d41deff"
+  },
+  "userId": {
+    "$oid": "6387684cb275566aca82ca11"
+  },
+  "presentationId": {
+    "$oid": "6399cc8c6c56147bfa47060b"
+  },
+  "role": "sharedwithme",
+  "__v": 0
+}]

@@ -4,8 +4,8 @@
   },
   "email": "dragontrungks123@gmail.com",
   "password": "$2a$10$VPM0ujhwaJyQQrYmqtau/uOEWaF3honIyg5Rx5OmqSsKtda/hk24K",
-  "name": "Bao Trung",
-  "photo": "http://res.cloudinary.com/dcb3l1cvi/image/upload/v1671023800/upload/vqh0cvfj1a8za6qtvipt.jpg",
+  "name": "Bao Trung up",
+  "photo": "http://res.cloudinary.com/dcb3l1cvi/image/upload/v1671447120/upload/dq9uib8pb0wmzcnymdal.jpg",
   "role": "user",
   "active": true,
   "googleId": null,
@@ -17,7 +17,7 @@
   },
   "updatedAt": {
     "$date": {
-      "$numberLong": "1671023800243"
+      "$numberLong": "1671447119948"
     }
   },
   "__v": 0
