@@ -48,7 +48,7 @@ module.exports = {
     try {
       let isOwner = await presentationSchema.findOne({
         owner: asker,
-        presentationId,
+        _id: presentationId,
       });
 
       let isCoOwner = await UserPresentation.findOne({
@@ -63,7 +63,10 @@ module.exports = {
 
       const filter = { questionId: mongoose.Types.ObjectId(questionId), asker };
       const updated = { isAnswered: isAnswered };
+
       const result = await questionSchema.findOneAndUpdate(filter, updated);
+      questionSchema.deleteOne(result);
+      result.save();
       console.log("result:", result);
       if (result) {
         return {
