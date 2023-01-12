@@ -15,6 +15,8 @@ const groupDetailRoute = require("./src/api/routes/groupDetailRoute");
 const groupRoute = require("./src/api/routes/groupRoute");
 const presentationRoute = require("./src/api/routes/presentationRoute");
 const slideRoute = require("./src/api/routes/slideRoute");
+const groupPresentationSlideRoute = require("./src/api/routes/groupPresentationSlideRoute");
+const slideResultRoute = require("./src/api/routes/slideResultRoute");
 
 const app = express();
 
@@ -60,6 +62,8 @@ app.use("/api/group", groupDetailRoute);
 app.use("/api/groups", groupRoute);
 app.use("/api/presentations", presentationRoute);
 app.use("/api/slides", slideRoute);
+app.use("/api/groupPresentationSlides", groupPresentationSlideRoute);
+app.use("/api/slideResults", slideResultRoute);
 
 // Routes
 app.get("/", (req, res) => {
