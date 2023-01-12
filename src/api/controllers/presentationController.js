@@ -1,11 +1,26 @@
 const presentationService = require("../services/presentationService");
 const Presentation = require("../models/presentationModel");
+const userPresentationService = require("../services/userPresentationService");
 
 module.exports = {
   getAll: async (req, res) => {
-    const results = await presentationService.getPresentationsByUserId({
-      userId: req.user._id,
-    });
+    console.log(req.query.type);
+    let results = null;
+
+    switch (req.query.type) {
+      case "ownedbyme": {
+        results = await presentationService.getPresentationsByUserId({
+          userId: req.user._id,
+        });
+        break;
+      }
+      case "sharedwithme": {
+        results = await userPresentationService.getAll({
+          userId: req.user._id,
+        });
+        break;
+      }
+    }
 
     if (results.status == "success") {
       return res.status(200).json({

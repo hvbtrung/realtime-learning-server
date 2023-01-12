@@ -17,6 +17,9 @@ const presentationRoute = require("./src/api/routes/presentationRoute");
 const slideRoute = require("./src/api/routes/slideRoute");
 const groupPresentationSlideRoute = require("./src/api/routes/groupPresentationSlideRoute");
 const slideResultRoute = require("./src/api/routes/slideResultRoute");
+const messageRoute = require("./src/api/routes/messageRoute");
+const questionRoute = require("./src/api/routes/questionRoute");
+const questionVoteRoute = require("./src/api/routes/questionVoteRoute");
 
 const app = express();
 
@@ -50,12 +53,6 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, "public")));
 app.use(requestInfo);
 
-// require("./src/api/controllers/presentationController").createPresentation();
-// require("./src/api/controllers/presentationController").updatePresentation();
-
-// require("./src/api/controllers/presentationController").deletePresentation();
-// require("./src/api/controllers/presentationController").getAll();
-
 // Routes Middleware
 app.use("/api/users", userRoute);
 app.use("/api/group", groupDetailRoute);
@@ -64,6 +61,9 @@ app.use("/api/presentations", presentationRoute);
 app.use("/api/slides", slideRoute);
 app.use("/api/groupPresentationSlides", groupPresentationSlideRoute);
 app.use("/api/slideResults", slideResultRoute);
+app.use("/api/messages", messageRoute);
+app.use("/api/questions", questionRoute);
+app.use("/api/vote", questionVoteRoute);
 
 // Routes
 app.get("/", (req, res) => {

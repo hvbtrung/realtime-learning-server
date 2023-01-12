@@ -1,5 +1,6 @@
 const presentationSchema = require("../models/presentationModel");
-const mongoose = require("mongoose");
+const userPresentationService = require("./userPresentationService");
+const messageService = require("./messageService");
 
 module.exports = {
   getPresentationsByUserId: async ({ userId }) => {
@@ -41,7 +42,8 @@ module.exports = {
 
   update: async ({ userId, presentationId, titlePresentation }) => {
     try {
-      const filter = { owner: userId, _id: presentationId };
+      // const filter = { owner: userId, _id: presentationId };
+      const filter = { _id: presentationId };
       const updated = { title: titlePresentation };
       await presentationSchema.findOneAndUpdate(filter, updated);
 
@@ -59,8 +61,9 @@ module.exports = {
         _id: presentationId,
       };
 
-      const a = await presentationSchema.findOneAndDelete(filter);
-
+      await presentationSchema.findOneAndDelete(filter);
+      await userPresentationService.delete({ presentationId: presentationId });
+      await messageService.delete({ presentationId: presentationId });
       return { status: "success", message: "Deleting a presentation success" };
     } catch (e) {
       console.error("Deleting's error", e);
